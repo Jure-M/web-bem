@@ -1,0 +1,23 @@
+.c-counter {
+  font-family: $gothic;
+  padding: 0.5rem;
+
+  &__body {
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1;
+    color: $color-primary;
+
+    @include respond(tab-port) {
+      font-size: 7.2rem;
+    }
+  }
+
+  &__footer {
+    font-size: 1.4rem;
+    color: $color-primary-dark;
+    @include respond(tab-port) {
+      font-size: 1.6rem;
+    }
+  }
+}

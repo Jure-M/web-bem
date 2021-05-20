@@ -1,0 +1,49 @@
+.c-swiper {
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  cursor: poniter;
+  &__slides {
+    --n: 1;
+    width: 100%;
+    display: flex;
+    width: calc(var(--n) * 100%);
+    transform: translate(calc(var(--i, 0) / var(--n) * -100% + var(--tx, 0px)));
+    cursor: poniter;
+
+    &.js-isSmooth {
+      transition: transform 0.5s ease-out;
+    }
+  }
+
+  &__slide {
+    width: calc(100% / var(--n));
+    pointer-events: none;
+    padding: 2rem 4rem;
+    cursor: pointer;
+  }
+
+  &__arrow {
+    font-size: 2rem;
+    color: $color-primary;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 0.4rem;
+    cursor: pointer;
+    @include respond(tab-port) {
+      font-size: 4rem;
+      padding: 0 1rem;
+    }
+
+    &:hover {
+      color: $color-primary-darker;
+    }
+
+    &--right {
+      right: 0;
+    }
+  }
+}

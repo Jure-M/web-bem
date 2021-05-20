@@ -1,0 +1,88 @@
+.container {
+  max-width: 118rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 97vw;
+  height: inherit;
+
+  @include respond(tab-land) {
+    padding: 0;
+  }
+}
+
+.section {
+  @extend %section;
+  transition: all 1s ease-in-out;
+
+  &--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+  }
+}
+
+.u-flex-center {
+  @extend %flex-center;
+  height: 100%;
+  width: 100%;
+}
+
+.u-flex-end {
+  justify-content: center;
+  @include respond(tab-port) {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 6rem !important;
+}
+.u-margin-bottom-medium {
+  margin-bottom: 5rem !important;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 3rem !important;
+}
+
+.u-margin-bottom-smaller {
+  margin-bottom: 2rem !important;
+}
+
+.u-margin-right-big {
+  margin-right: 6rem !important;
+}
+.u-margin-right-medium {
+  margin-right: 5rem !important;
+}
+
+.u-margin-right-small {
+  margin-right: 3rem !important;
+}
+
+.u-margin-right-smaller {
+  margin-right: 2rem !important;
+}
+
+.u-margin-right-tiny {
+  margin-right: 0.7rem !important;
+}
+
+.u-text-center {
+  text-align: center !important;
+}
+
+.u-text-right {
+  text-align: right !important;
+}
+
+.u-text-left {
+  text-align: left !important;
+}
+
+.u-display-md-none {
+  display: none !important;
+  @include respond(tab-port) {
+    display: block !important;
+  }
+}

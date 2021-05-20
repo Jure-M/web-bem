@@ -1,0 +1,29 @@
+.c-secondary-nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__link {
+    margin-bottom: 1.9rem;
+
+    a {
+      font-weight: 500;
+      color: $color-primary-darker;
+
+      &:hover,
+      &:active {
+        color: $color-secondary;
+      }
+    }
+  }
+}
+
+.c-secondary-nav--2-col {
+  .c-secondary-nav__link {
+    flex: 0 0 50%;
+  }
+}

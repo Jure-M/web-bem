@@ -1,0 +1,21 @@
+.c-mobile-nav {
+  &--list-item {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: $color-primary-dark;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+  &--list-item.active {
+    color: $color-secondary;
+  }
+}

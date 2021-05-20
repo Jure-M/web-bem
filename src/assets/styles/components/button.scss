@@ -1,0 +1,21 @@
+.c-btn {
+  font-family: $gothic;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  color: $color-white;
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+  padding: 0.9rem 2rem;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+
+  &:hover,
+  &:acitve {
+    background-color: $color-primary-dark;
+    border: 1px solid $color-primary-dark;
+  }
+  @include respond(tab-port) {
+    font-size: 2rem;
+    padding: 0.9rem 2.2rem;
+  }
+}

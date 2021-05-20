@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400&family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/animations";
+
+@import "base/base";
+@import "base/utils";
+@import "base/typography";
+
+@import "layout/nav-bar";
+@import "layout/locations.scss";
+@import "layout/mobile-menu.scss";
+@import "layout/grid.scss";
+@import "layout/footer.scss";
+@import "layout/about-section.scss";
+
+@import "pages/home.scss";
+
+@import "components/logo.scss";
+@import "components/primary-nav.scss";
+@import "components/menu-icon.scss";
+@import "components/mobile-nav.scss";
+@import "components/hero.scss";
+@import "components/search.scss";
+@import "components/button.scss";
+@import "components/tag.scss";
+@import "components/image-scroll.scss";
+@import "components/property.scss";
+@import "components/slider.scss";
+@import "components/secondary-nav.scss";
+@import "components/information.scss";
+@import "components/icon.scss";
+@import "components/review.scss";
+@import "components/counter.scss";
+@import "components/swiper.scss";

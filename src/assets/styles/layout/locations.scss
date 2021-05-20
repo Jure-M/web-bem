@@ -1,0 +1,15 @@
+.l-locations {
+  &--img-area {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  &--scroll-area {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    @media (min-width: 120rem) {
+      overflow-x: hidden;
+    }
+  }
+}

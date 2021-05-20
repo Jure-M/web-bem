@@ -1,0 +1,29 @@
+.c-primary-nav {
+  display: none;
+  @include respond(tab-port) {
+    display: block;
+  }
+
+  &--list {
+    display: flex;
+  }
+  &--list-item {
+    padding: 1rem;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: $color-primary-dark;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+  &--list-item.active {
+    color: $color-secondary;
+  }
+}
